@@ -178,7 +178,7 @@ public class XmlTests
             </body>
             """);
         return Verify(document)
-            .IgnoreMember("att");
+            .ScrubMember("att");
     }
 
     [Fact]
@@ -192,7 +192,7 @@ public class XmlTests
             </body>
             """);
         return Verify(document)
-            .ScrubMember("att");
+            .IgnoreMember("att");
     }
 
     [Fact]
